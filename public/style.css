@@ -1,0 +1,347 @@
+/* //////////////// MINIMAL RESET \\\\\\\\\\\\\\\\ */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+   
+  html, body {
+    height: 100%;
+  }
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-navbar {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+}
+
+.top-navbar-section {
+  display: flex;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  flex: 1 1 auto;
+  background: radial-gradient(at bottom RIGHT, rgba(0, 240, 100, 0.04), rgba(0, 240, 100, 0.09 ), rgba(0, 240, 100, 0.06), rgba(240, 240, 240, 0.01), rgba(240, 240, 240, 0), rgba(0, 240, 100, 0.1)),
+  url("./pics/noise.svg"),
+  url(./pics/noise.png) center/cover;
+}
+
+.logo-icon img {
+  object-fit: cover;
+  filter: saturate(0%);
+  width: 74px;
+  height: 50px;
+  fill: gray;
+  margin-left: 80px;
+}
+
+.cart-icon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  transform: scaleX(-1);
+  margin-right: 60px;
+}
+
+.cart-icon img{
+  height: 24px;
+}
+
+.profile-icon img{
+  object-fit: cover;
+  transform: scaleX(-1);
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  margin-right: 80px;
+}
+
+.top-navbar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.top-navbar-button a{
+  color: #000;
+  text-decoration: none;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.top-navbar-button a:hover{
+  color: #aaaaaa;
+  text-decoration: none;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.main-page {
+  display: flex;
+  width: 1440px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 100px;
+}
+
+.main-bottle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  border-radius: 10px;
+}
+
+.main-bottle-section img{
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+.main-bottle-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.096);
+  height: 376px;
+}
+
+.main-bottle-card p{
+  color: #3F3631;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 13px;
+}
+
+.main-bottle-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 110px;
+}
+
+.main-bottle-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 304px;
+  border-radius: 10px;
+}
+
+.main-bottle-info article {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #9C8E76;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.main-bottle-id-price {
+  display: flex;
+  color: #3F3631;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main-bottle-id-price p {
+  color: #3F3631;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 6px;
+  margin-bottom: 30px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section input{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  border: 0px;
+  color: #3F3631;
+  border-bottom: 1px solid #3F3631;
+  outline: none;
+  padding: 0px;
+  margin: 0px;
+  width: 660px;
+}
+
+.search-section h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px 0px 10px 3px;
+  color: #EB5757;
+  padding-left: 64px;
+}
+
+.search-section article {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 560px;
+  color: #9C8E76;
+  margin-top: 24px;
+  margin-bottom: 50px;
+  padding-left: 64px;
+}
+
+.search-section p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 500px;
+  color: #9C8E76;
+  margin-bottom: 212px;
+  padding-left: 64px;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  width: 900px;
+}
+
+.glass {
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.small-bottles-section {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.small-bottles-section img{
+  max-width: 200px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+}
+
+.small-bottle-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.096);
+  width: 200px;
+}
+
+.small-bottle-card p {
+  color: #3F3631;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.small-bottle-card:last-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.small-bottle-info article {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #9C8E76;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.small-bottle-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 110px;
+}
+
+.small-bottle-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  border-radius: 10px;
+}
